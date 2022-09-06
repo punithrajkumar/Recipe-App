@@ -13,7 +13,8 @@ export class RecipeService {
     new Recipe(
       'A Delicious Pancake',
       'A Pancake with the honey, fruits and nuts',
-      '../../../assets/Pancake.jpg',
+      'https://cdn.pixabay.com/photo/2018/01/22/16/28/pancake-3099315_960_720.jpg',
+      
       [
         new Ingredient('Mini Pancake', 10),
         new Ingredient('Nuts', 10),
@@ -23,7 +24,7 @@ export class RecipeService {
     new Recipe(
       'Bread Omelette',
       'A Bread omelette with bean and a cup of coffee',
-      '../../../assets/Breakfast.jpg',
+      'https://cdn.pixabay.com/photo/2016/11/18/14/39/beans-1834984_960_720.jpg',
       [
         new Ingredient('Rosted Bread', 2),
         new Ingredient('Half-boiled egg', 2),
@@ -33,7 +34,7 @@ export class RecipeService {
     new Recipe(
       'Korean Bibim Noodles',
       'Hot and spicy korean bibim noodles',
-      '../../../assets/Noodles.jpg',
+      'https://cdn.pixabay.com/photo/2015/04/06/16/21/korean-food-709606_960_720.jpg',
       [
         new Ingredient('Noodle', 200),
         new Ingredient('Chilli Pepper', 5),
