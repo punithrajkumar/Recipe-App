@@ -2,7 +2,7 @@
   <div class="col-sm-2">
     <label for="title">Shopping</label
     ><img
-      src="../../../assets/Shopping-image.jpg"
+      src="https://cdn.pixabay.com/photo/2016/10/10/14/46/icon-1728552_960_720.jpg"
       alt="Shopping Image"
       style="max-width: 3rem"
     />
@@ -22,7 +22,7 @@
             name="name"
             ngModel
             required
-          />
+          >
         </div>
         <div class="col-sm-2 form-group">
           <label for="amount">Amount</label>
@@ -34,27 +34,22 @@
             ngModel
             required
             pattern="^[1-9]+[0-9]*$"
-          />
+          >
         </div>
       </div>
       <div class="row">
         <div class="col-xs-12">
-          <button class="btn btn-success" type="submit" [disabled]="!f.valid">
-            {{ editMode ? "Update" : "Add" }}
-          </button>
-          &nbsp;
+          <button
+            class="btn btn-success"
+            type="submit"
+            [disabled]="!f.valid">{{ editMode ? 'Update' : 'Add' }}</button>
           <button
             class="btn btn-danger"
             type="button"
             (click)="onDelete()"
-            *ngIf="editMode"
-          >
-            Delete
-          </button>
-          &nbsp;
-          <button class="btn btn-primary" type="button" (click)="onClear()">
-            Clear
-          </button>
+            *ngIf="editMode">Delete</button>
+            |
+          <button class="btn btn-primary" type="button" (click)="onClear()">Clear</button>
         </div>
       </div>
     </form>
